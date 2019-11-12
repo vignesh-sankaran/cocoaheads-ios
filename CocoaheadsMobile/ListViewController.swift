@@ -74,6 +74,7 @@ class ListViewController: UITableViewController, SegueHandlerType {
     func configure(cell:UITableViewCell, withEvent event:ListEvent) {
         cell.textLabel?.text = event.title
         cell.detailTextLabel?.text = event.subtitle
+        cell.accessibilityIdentifier = "eventCell"
     }
     
     //MARK: Error States

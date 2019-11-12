@@ -34,6 +34,7 @@ class EventDetailViewController: UIViewController {
         webView.activateSuperviewHuggingConstraints()
         
         self.webView = webView
+        self.webView?.accessibilityIdentifier = "eventDetailWebView"
         
         if let event = self.event {
             load(url: event.url)

@@ -23,8 +23,19 @@
 		152063C82191329900DECB3E /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 152063C72191329900DECB3E /* Podfile */; };
 		1520646F219175C900DECB3E /* EventsAPI+Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1520646D219175C900DECB3E /* EventsAPI+Result.swift */; };
 		15ECAE951E9EE50B00487E4F /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15ECAE941E9EE50B00487E4F /* Result.swift */; };
+		2F778DD32373F65A0017B480 /* CocoaheadsMobileUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F778DD22373F65A0017B480 /* CocoaheadsMobileUITests.swift */; };
 		52ED999BB0B065405DE74DB9 /* Pods_CocoaheadsMobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 070B346734C1DF555B83FCE2 /* Pods_CocoaheadsMobile.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2F778DD52373F65A0017B480 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 150C8E5C1E99C62000CB4D16 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 150C8E631E99C62000CB4D16;
+			remoteInfo = CocoaheadsMobile;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		150C8E8A1E99D68000CB4D16 /* Embed Frameworks */ = {
@@ -60,6 +71,9 @@
 		1520646D219175C900DECB3E /* EventsAPI+Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "EventsAPI+Result.swift"; sourceTree = "<group>"; };
 		15ECAE941E9EE50B00487E4F /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		24EEAD5DDDD30139C3D44F23 /* Pods-CocoaheadsMobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocoaheadsMobile.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CocoaheadsMobile/Pods-CocoaheadsMobile.debug.xcconfig"; sourceTree = "<group>"; };
+		2F778DD02373F65A0017B480 /* CocoaheadsMobileUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CocoaheadsMobileUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F778DD22373F65A0017B480 /* CocoaheadsMobileUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocoaheadsMobileUITests.swift; sourceTree = "<group>"; };
+		2F778DD42373F65A0017B480 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C1EF3783EDC80AA6D52CA227 /* Pods-CocoaheadsMobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocoaheadsMobile.release.xcconfig"; path = "Pods/Target Support Files/Pods-CocoaheadsMobile/Pods-CocoaheadsMobile.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -73,6 +87,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2F778DCD2373F65A0017B480 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -82,6 +103,7 @@
 				152063C72191329900DECB3E /* Podfile */,
 				152063C52191324000DECB3E /* README.md */,
 				150C8E661E99C62000CB4D16 /* CocoaheadsMobile */,
+				2F778DD12373F65A0017B480 /* CocoaheadsMobileUITests */,
 				150C8E651E99C62000CB4D16 /* Products */,
 				29D4823A45AED11900767724 /* Pods */,
 				16DBBA71E0093D4DBA1FC3DB /* Frameworks */,
@@ -92,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				150C8E641E99C62000CB4D16 /* CocoaheadsMobile.app */,
+				2F778DD02373F65A0017B480 /* CocoaheadsMobileUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -167,6 +190,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		2F778DD12373F65A0017B480 /* CocoaheadsMobileUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2F778DD22373F65A0017B480 /* CocoaheadsMobileUITests.swift */,
+				2F778DD42373F65A0017B480 /* Info.plist */,
+			);
+			path = CocoaheadsMobileUITests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -190,13 +222,31 @@
 			productReference = 150C8E641E99C62000CB4D16 /* CocoaheadsMobile.app */;
 			productType = "com.apple.product-type.application";
 		};
+		2F778DCF2373F65A0017B480 /* CocoaheadsMobileUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F778DD72373F65A0017B480 /* Build configuration list for PBXNativeTarget "CocoaheadsMobileUITests" */;
+			buildPhases = (
+				2F778DCC2373F65A0017B480 /* Sources */,
+				2F778DCD2373F65A0017B480 /* Frameworks */,
+				2F778DCE2373F65A0017B480 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2F778DD62373F65A0017B480 /* PBXTargetDependency */,
+			);
+			name = CocoaheadsMobileUITests;
+			productName = CocoaheadsMobileUITests;
+			productReference = 2F778DD02373F65A0017B480 /* CocoaheadsMobileUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		150C8E5C1E99C62000CB4D16 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0830;
+				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Melbourne CocoaHeads";
 				TargetAttributes = {
@@ -204,6 +254,10 @@
 						CreatedOnToolsVersion = 8.3.1;
 						LastSwiftMigration = 1010;
 						ProvisioningStyle = Automatic;
+					};
+					2F778DCF2373F65A0017B480 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 150C8E631E99C62000CB4D16;
 					};
 				};
 			};
@@ -221,6 +275,7 @@
 			projectRoot = "";
 			targets = (
 				150C8E631E99C62000CB4D16 /* CocoaheadsMobile */,
+				2F778DCF2373F65A0017B480 /* CocoaheadsMobileUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -235,6 +290,13 @@
 				150C8E6F1E99C62000CB4D16 /* Assets.xcassets in Resources */,
 				152063C62191324000DECB3E /* README.md in Resources */,
 				150C8E6D1E99C62000CB4D16 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F778DCE2373F65A0017B480 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,7 +361,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2F778DCC2373F65A0017B480 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F778DD32373F65A0017B480 /* CocoaheadsMobileUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2F778DD62373F65A0017B480 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 150C8E631E99C62000CB4D16 /* CocoaheadsMobile */;
+			targetProxy = 2F778DD52373F65A0017B480 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		150C8E6B1E99C62000CB4D16 /* Main.storyboard */ = {
@@ -438,6 +516,7 @@
 			baseConfigurationReference = 24EEAD5DDDD30139C3D44F23 /* Pods-CocoaheadsMobile.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VZBMFUFU3J;
 				INFOPLIST_FILE = CocoaheadsMobile/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -454,6 +533,7 @@
 			baseConfigurationReference = C1EF3783EDC80AA6D52CA227 /* Pods-CocoaheadsMobile.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VZBMFUFU3J;
 				INFOPLIST_FILE = CocoaheadsMobile/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -462,6 +542,59 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.melbournecocoaheads.CocoaheadsMobile;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		2F778DD82373F65A0017B480 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VZBMFUFU3J;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = CocoaheadsMobileUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.melbournecocoaheads.CocoaheadsMobile.CocoaheadsMobileUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CocoaheadsMobile;
+			};
+			name = Debug;
+		};
+		2F778DD92373F65A0017B480 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VZBMFUFU3J;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = CocoaheadsMobileUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.melbournecocoaheads.CocoaheadsMobile.CocoaheadsMobileUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CocoaheadsMobile;
 			};
 			name = Release;
 		};
@@ -482,6 +615,15 @@
 			buildConfigurations = (
 				150C8E771E99C62000CB4D16 /* Debug */,
 				150C8E781E99C62000CB4D16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F778DD72373F65A0017B480 /* Build configuration list for PBXNativeTarget "CocoaheadsMobileUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F778DD82373F65A0017B480 /* Debug */,
+				2F778DD92373F65A0017B480 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
